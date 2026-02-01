@@ -9,10 +9,16 @@
 def task1():
     word = input("შეიყვანეთ სიტყვა: ")
 
-    if word[-1] == "i" or word[-1] == "I":
-        print(word)
-    else:
-        print("არასწორია")
+    list1 = word.split()
+    list2 = []
+
+    for i in list1:
+        if i.endswith("i") or i.endswith("I"):
+            list2.append(i)
+
+    return list2 , len(list1)
+        
+    
     
 
-task1()
+print(task1())

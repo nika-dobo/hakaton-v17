@@ -13,14 +13,14 @@ def task7():
     even_count = 0
     odd_count = 0  
 
-    for i in range(1, limit + 1):
+    for i in range(1, limit):
         if i % 2 == 0:
             even_count += 1
         else:
             odd_count += 1
 
-    print(f"ლუწი: {even_count}")
-    print(f"კენტი: {odd_count}")
+    print(f"even: {even_count}")
+    print(f"odd: {odd_count}")
 
 task7()
 

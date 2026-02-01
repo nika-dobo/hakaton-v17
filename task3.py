@@ -8,17 +8,27 @@
 # თითოეულ სიტყვას დაბეჭდოს ახალ ხაზზე.
  
 def task3():
-    list = []
+    list2 = []
     word = input("Enter a words:")
+    list1 = word.split()
     final = ""
 
-    for i in word:
-        if i not in list:
-            final += i
-            list.append(i)
+    for i in list1:
+        for j in i:
+            
+            if j not in final:
+                final += j
 
-        if final == word:
-            print(final)
+        if final == i:
+            list2.append(i)
+            final = ""
+
+    for i in list2:
+        print(i)
+                
+
+
+    
 
 
 task3() 

@@ -12,11 +12,8 @@ def task2():
 
     words = sentence.split()
 
-    print("სიტყვები, რომლებიც 5-დან 7 ასომდეა:")
-
-    for word in words:
-        if 5 <= len(word) <= 7:
-            print(word)
-
+    for i in words:
+        if 5 <= len(i) <= 7:
+            print(i)
 
 task2()
