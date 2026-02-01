@@ -6,3 +6,24 @@
 
 # რამდენი რიცხვი არის ლუწი და კენტი შემოყვანილ რიცხვამდე
 # შემდგომ ტერმინალში გამოიტანეთ რამდენი კენტი და რამდენი ლუწი რიცხვი იქნება 
+
+def task7():
+    limit = int(input("შეიყვანეთ რიცხვი: "))
+
+    even_count = 0
+    odd_count = 0  
+
+    for i in range(1, limit + 1):
+        if i % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+
+    print(f"ლუწი: {even_count}")
+    print(f"კენტი: {odd_count}")
+
+task7()
+
+
+
+

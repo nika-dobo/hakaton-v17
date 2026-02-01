@@ -8,7 +8,7 @@
 #                 "" -->                 ""
 
 
-def maskify(ran):
+def task10(ran):
     res = ""
 
     if len(ran) <= 4:
@@ -17,3 +17,5 @@ def maskify(ran):
     res += "#"*(len(ran) - 4) + ran[-4:]
 
     return res
+
+task10()

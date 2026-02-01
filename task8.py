@@ -2,7 +2,7 @@
 # შესაფასებელი ქულა: 0-4
 # შექმენი ფუნქცია get_count და ფუნქციას უნდა გადაეცემოდეს არგუმენტი წინადადება და თქვენი დავალებაა დაითვალოს ხმოვნები “a, e, i, o, u”
 
-def get_count(random):
+def task8(random):
     letters = "aeiou"
     count = 0
 
@@ -11,3 +11,5 @@ def get_count(random):
             count += 1
 
     return count
+
+task8()

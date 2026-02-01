@@ -3,7 +3,7 @@
 # შექმენი ფუნქცია accum და უნდა გადმოგეცეს რაიმე სიტყვა 
 # მაგალითი : accum("abcd") -> "A-Bb-Ccc-Dddd"
 
-def accum(random1):
+def task9(random1):
     res = ""
 
     for i in range(len(random1)):
@@ -11,3 +11,5 @@ def accum(random1):
 
 
     return res[:-1]
+
+task9()

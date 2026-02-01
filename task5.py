@@ -7,16 +7,20 @@
 # მოაცილოს დიდი ასოები 
 # და არ უნდა იყოს პაროლი 8 ასოზე ნაკლები
 
-password = input("შეიყვანეთ პაროლი: ")
 
-new_password = ""
+def task5():
+    password = input("შეიყვანეთ პაროლი: ")
 
-for i in password:
-    if not i.isupper() and i != " ":
-        new_password += i
+    new_password = ""
 
-if len(new_password) >= 8:
-    print("პაროლი მიღებულია")
-    print("შედეგი:", new_password)
-else:
-    print("8 სიმბოლოს არ უნდა აღმატებოდს")
+    for i in password:
+        if not i.isupper() and i != " ":
+            new_password += i
+
+    if len(new_password) >= 8:
+        print("პაროლი მიღებულია")
+        print("შედეგი:", new_password)
+    else:
+        print("8 სიმბოლოს არ უნდა აღმატებოდს")
+
+task5()
